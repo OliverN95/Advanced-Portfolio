@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css" integrity="sha512-/RUbtHakVMJrg1ILtwvDIceb/cDkk97rWKvfnFSTOmNbytCyEylutDqeEr9adIBye3suD3RfcsXLOLBqYRW4gw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css"
+      integrity="sha512-/RUbtHakVMJrg1ILtwvDIceb/cDkk97rWKvfnFSTOmNbytCyEylutDqeEr9adIBye3suD3RfcsXLOLBqYRW4gw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-
     <section id="landing">
       <nav>
         <figure>
@@ -16,53 +21,59 @@
         </figure>
         <ul class="nav__list">
           <li class="nav__link">
-            <a href="#landing" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-            ">About</a>
+            <a
+              href="#landing"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
           </li>
           <li class="nav__link">
-            <a href="#projects" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-            ">Projects</a>
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
           </li>
           <li class="nav__link">
-            <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-            ">Contact</a>
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
           </li>
           <li class="nav__link">
-            <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-            "><i class="fas fa-adjust"></i></a>
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
           </li>
         </ul>
       </nav>
 
       <header>
         <div class="header__content">
-            <h1 class="title">Hey</h1>
-            <h1 class="title__two">I'm Oliver.</h1>
-            <p class="landing__para">I'm a <span>Frontend Software Engineer</span> with a passion for building beautiful and responsive web applications. 
-            <br>Here's a bit more <span>about me.</span> </p>
-            <div class="landing__icons">
-                <a target="_blank" href="https://www.linkedin.com/in/oliver-norgrove-1421b42a3/">
-                    <i class="fab fa-linkedin-in landing__icon click"></i>
-                </a>
-                <a target="_blank" href="https://github.com/OliverN95">
-                    <i class="fab fa-github landing__icon click"></i>
-                </a>
-                <a target="_blank" href="./assets/">
-                    <i class="far fa-file-pdf landing__icon pdf click"></i>
-                </a>
-            </div>
+          <h1 class="title">Hey</h1>
+          <h1 class="title__two">I'm Oliver.</h1>
+          <p class="landing__para">
+            I'm a <span>Frontend Software Engineer</span> with a passion for
+            building beautiful and responsive web applications. <br />Here's a
+            bit more <span>about me.</span>
+          </p>
+          <div class="landing__icons">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/oliver-norgrove-1421b42a3/"
+            >
+              <i class="fab fa-linkedin-in landing__icon click"></i>
+            </a>
+            <a target="_blank" href="https://github.com/OliverN95">
+              <i class="fab fa-github landing__icon click"></i>
+            </a>
+            <a target="_blank" href="./assets/">
+              <i class="far fa-file-pdf landing__icon pdf click"></i>
+            </a>
+          </div>
         </div>
       </header>
       <button class="mail__btn click">
@@ -71,92 +82,185 @@
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+            <h3 class="modal__about--title">Here's a bit about me</h3>
+            <h5 class="modal__about--subtitle">Frontend Software Engineer</h6>
+            <p class="modal__about--para">I'm a 28 year old British <span class="modal__span">frontend software engineer</span> with a burning passion for developing original and dynamic websites. My goal is to <span class="modal__span">provide users with a seemless, enjoyable experience.</span></p>
+            <p class="modal__about--para">I am currently working on the Frontend Simplified software engineering course, where I am learning to create <span class="modal__span">functional web applications.</span> I am <span class="modal__span">solving</span> highly technical engineering problems using a wide range of programming languages. </p>
+            <div class="modal__languages">
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                    <span class="language__name">HTML</span>
+                </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+                    <span class="language__name">CSS</span>
+                </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                    <span class="language__name">JAVASCRIPT</span>
+                </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
+                    <span class="language__name">REACT</span>
+                </figure>
+            </div>
+        </div>
+        <div class="modal__half modal__contact">
+            <h3 class="modal__contact--title">Please get in touch!</h3>
+            <h5 class="modal__contact--subtitle">I'm open to professional opportunities.</h6>
+            <form id="contact__form" action="">
+                <div class="form__item">
+                   <label class="form__item--label"><span>*</span> Name</label>
+                   <input class="input" name="user_name" type="text" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label"><span>*</span> Email</label>
+                    <input class="input" name="user_email" type="email" required></input>
+                 </div>
+                 <div class="form__item">
+                    <label class="form__item--label"><span>*</span> Message</label>
+                    <textarea class="input" name="message" type="text" required></textarea>
+                 </div>
+                 <button id="contact__submit" class="form__submit">
+                    Submit 
+                </button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+                Thank you for your message. <br>I will get back to you as soon as possible.
+            </div>
+        </div>
+        <i class="fas fa-times modal__exit click"></i>
+      </div>
     </section>
 
     <section id="projects">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">Here are some of my <span>projects</span></h1>
-                <ul class="projects__list">
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="/assets/TReact.png" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Treact project
-                                </h3>
-                                <h4 class="project__description--subtitle">
-                                    HTML, CSS and Javascript
-                                </h4>
-                                <p class="project__description--para">
-                                    This website offers potential clients useful and original React templates, as well as a variety of product tiers which can be purchased by individuals or businesses.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="#">
-                                        <i class="fab fa-github project__icon click"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fas fa-link project__icon click"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="/assets/HE.png" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Haining Electrical project
-                                </h3>
-                                <h4 class="project__description--subtitle">
-                                    HTML, CSS and Javascript
-                                </h4>
-                                <p class="project__description--para">
-                                    A local trader wanted a website that acted as a funnel for potential customers. The website is geared around encouraging users to contact Haining Electrical and direct any queries to them.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="#">
-                                        <i class="fab fa-github project__icon click"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fas fa-link project__icon click"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img class="project__img" src="/assets/Library.png" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Library project
-                                </h3>
-                                <h4 class="project__description--subtitle">
-                                    HTML, CSS and Javascript
-                                </h4>
-                                <p class="project__description--para">
-                                    This website provides Library with an online book store giving customers immediate access to the books that they purchase rather than forcing them to wait to receive a physical copy.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="#">
-                                        <i class="fab fa-github project__icon click"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fas fa-link project__icon click"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span>projects</span>
+          </h1>
+          <ul class="projects__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img class="project__img" src="/assets/TReact.png" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Treact project</h3>
+                  <h4 class="project__description--subtitle">
+                    HTML, CSS and Javascript
+                  </h4>
+                  <p class="project__description--para">
+                    This website offers potential clients useful and original
+                    React templates, as well as a variety of product tiers which
+                    can be purchased by individuals or businesses.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#">
+                      <i class="fab fa-github project__icon click"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fas fa-link project__icon click"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img class="project__img" src="/assets/HE.png" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Haining Electrical project
+                  </h3>
+                  <h4 class="project__description--subtitle">
+                    HTML, CSS and Javascript
+                  </h4>
+                  <p class="project__description--para">
+                    A local trader wanted a website that acted as a funnel for
+                    potential customers. The website is geared around
+                    encouraging users to contact Haining Electrical and direct
+                    any queries to them.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#">
+                      <i class="fab fa-github project__icon click"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fas fa-link project__icon click"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img class="project__img" src="/assets/Library.png" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Library project</h3>
+                  <h4 class="project__description--subtitle">
+                    HTML, CSS and Javascript
+                  </h4>
+                  <p class="project__description--para">
+                    This website provides Library with an online book store
+                    giving customers immediate access to the books that they
+                    purchase rather than forcing them to wait to receive a
+                    physical copy.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#">
+                      <i class="fab fa-github project__icon click"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fas fa-link project__icon click"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
 
+    <footer>
+        <div class="container">
+          <div class="footer__row">
+            <figure>
+                <img class="footer__logo" src="./assets/logo.svg" alt="" />
+            </figure>
+            <div class="footer__links">
+            <a
+            href="#"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >Github
+            </a>
+            <a
+            href="#"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >LinkedIn
+            </a>
+            <a
+            href="#"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >Instagram
+            </a>
+            <a
+            href="#"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >Resume
+            </a>
+            </div>
+            <div class="copyright">Copyright © 2024 Oliver Norgrove</div>
+          </div>
+        </div>
+    </footer>
+
   </body>
-</html>
+</htm
