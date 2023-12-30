@@ -207,6 +207,10 @@ nav {
     margin-bottom: 60px;
 }
 
+.project {
+    margin-bottom: 96px;
+}
+
 .project__img {
     width: 100%;
 }
@@ -224,7 +228,7 @@ nav {
 }
 
 .project__wrapper:hover .project__img {
-    transform: scale(1.07);
+    transform: scale(1.08);
     filter: blur(5px);
 }
 
@@ -236,7 +240,7 @@ nav {
     color: white;
     max-width: 550px;
     opacity: 0;
-    transition: opacity 300ms, transform 450ms ease;
+    transition: opacity 250ms, transform 250ms ease;
 }
 
 .project__wrapper--bg {
@@ -247,6 +251,7 @@ nav {
     height: 100%;
     background-color: black;
     opacity: 0;
+    transition: all 250ms ease;
 }
 
 .project__wrapper:hover .project__wrapper--bg {
