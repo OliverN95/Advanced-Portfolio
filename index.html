@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css"
@@ -12,6 +13,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("hHPdSwEXfYS2rGity");
+   })();
+</script>
   </head>
   <body>
     <section id="landing">
@@ -110,7 +119,7 @@
         <div class="modal__half modal__contact">
             <h3 class="modal__contact--title">Please get in touch!</h3>
             <h5 class="modal__contact--subtitle">I'm open to professional opportunities.</h6>
-            <form id="contact__form" action="">
+            <form id="contact__form" onsubmit="contact(event)">
                 <div class="form__item">
                    <label class="form__item--label"><span>*</span> Name</label>
                    <input class="input" name="user_name" type="text" required></input>
