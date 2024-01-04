@@ -22,8 +22,9 @@
    })();
 </script>
   </head>
+
   <body>
-    <section id="landing">
+    <section id="landing" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img class="personal__logo" src="/assets/logo.svg" alt="" />
@@ -50,7 +51,7 @@
               >Contact</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -67,7 +68,7 @@
           <p class="landing__para">
             I'm a <span>Frontend Software Engineer</span> with a passion for
             building beautiful and responsive web applications. <br />Here's a
-            bit more <span>about me.</span>
+            bit more <span class="header__span" onclick="toggleModal()">about me.</span>
           </p>
           <div class="landing__icons">
             <a
@@ -85,7 +86,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -122,15 +123,15 @@
             <form id="contact__form" onsubmit="contact(event)">
                 <div class="form__item">
                    <label class="form__item--label"><span>*</span> Name</label>
-                   <input class="input" name="user_name" type="text" required></input>
+                   <input class="input" name="user_name" type="text"></input>
                 </div>
                 <div class="form__item">
                     <label class="form__item--label"><span>*</span> Email</label>
-                    <input class="input" name="user_email" type="email" required></input>
+                    <input class="input" name="user_email" type="email"></input>
                  </div>
                  <div class="form__item">
                     <label class="form__item--label"><span>*</span> Message</label>
-                    <textarea class="input" name="message" type="text" required></textarea>
+                    <textarea class="input" name="message" type="text"></textarea>
                  </div>
                  <button id="contact__submit" class="form__submit">
                     Submit 
@@ -143,11 +144,20 @@
                 Thank you for your message. <br>I will get back to you as soon as possible.
             </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
       </div>
+      <img class="shape shape--0" src="assets/semi circle.svg" alt="">
+      <img class="shape shape--1" src="assets/circle.svg" alt="">
+      <img class="shape shape--2" src="assets/squiggly.svg" alt="">
+      <img class="shape shape--3" src="assets/circle.svg" alt="">
+      <img class="shape shape--4" src="assets/triangle.svg" alt="">
+      <img class="shape shape--5" src="assets/circle.svg" alt="">
+      <img class="shape shape--6" src="assets/squiggly.svg" alt="">
+      <img class="shape shape--7" src="assets/circle.svg" alt="">
+      <img class="shape shape--8" src="assets/semi circle.svg" alt="">
     </section>
 
-    <section id="projects">
+    <section id="projects" onmousemove="moveBackground(event)">
       <div class="container">
         <div class="row">
           <h1 class="section__title">
@@ -238,29 +248,29 @@
       </div>
     </section>
 
-    <footer>
+    <footer onmousemove="moveBackground(event)">
         <div class="container">
           <div class="footer__row">
             <figure>
                 <img class="footer__logo" src="./assets/logo.svg" alt="" />
             </figure>
             <div class="footer__links">
-            <a
-            href="#"
+            <a target="_blank"
+            href="https://github.com/OliverN95"
             class="footer__social--link link__hover-effect link__hover-effect--white"
             >Github
             </a>
-            <a
-            href="#"
+            <a target="_blank"
+            href="https://www.linkedin.com/in/oliver-norgrove-1421b42a3/"
             class="footer__social--link link__hover-effect link__hover-effect--white"
             >LinkedIn
             </a>
-            <a
-            href="#"
+            <a target="_blank"
+            href="https://www.instagram.com/olivernorgrove"
             class="footer__social--link link__hover-effect link__hover-effect--white"
             >Instagram
             </a>
-            <a
+            <a target="_blank"
             href="#"
             class="footer__social--link link__hover-effect link__hover-effect--white"
             >Resume
